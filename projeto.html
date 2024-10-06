@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="main.css"> <!-- comando usado para vincular o css ai html-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game shop a sua loja de games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!--aqui são as tags que usamos para alterar a fonte de escritas usado na pagina web-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">     
+        <h1> Games shop</h1>
+            <nav>  <!-- o comando nav foi usado para criar um menu, dentro do nav teremos uma lista de links não ordenada <ul>, -->
+                <ul>   <!--<li> é o comando usado para adicionar os itens da lista  --> 
+                    <li>
+                        <a href="#about">Sobre a loja</a> <!-- Tag <a é o Comando usado para adicionar links-->
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>  <!--Comando usado para adicionar links-->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <img class="store-front" src="./imagens projeto/loja.jpg" alt="Fachada da loja games shop">
+        <div>
+            <h2>Sobre a loja</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eligendi quo blanditiis debitis facilis architecto, veritatis est dolores deserunt ab illo adipisci eos perferendis. Iste ipsum aliquam voluptatibus ut tenetur.
+            </p>
+            <P>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic repellat vero excepturi provident, rerum nihil deserunt assumenda aliquid ipsum voluptatem. Quo suscipit possimus officia vel similique, necessitatibus molestiae odio quaerat?
+            </P>
+            <ul class="brand-list"> <!-- classe que criamos para usar no css--> 
+                <li><img src="./imagens projeto/nintendo.png" alt="nintendo"></li>  <!--img é um comando usado para puxar uma img, src é o local de dowload que essa img está, e alt é a descrição-->
+                <li><img src="./imagens projeto/xbox.png" alt="xbox"></li>             <!-- ul uma lista não ordenada, li conteudos dessa lista não ordenada-->
+                <li><img src="./imagens projeto/playstation.png" alt="playstation"></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2> Contato</h2>
+            <div class="contacts-methods">
+                <h3>fale conosco</h3>
+                <form>
+                    <input type="text" placeholder="Seu nome" required/>  <!--aqui criamos um input, um espaço para o usuario digitar informações-->
+                    <input type="email" placeholder="Seu email" required/>  <!-- nesse caso comunicamos o sistema que a primeira linha vai ser do tipo texto e contéra um nome-->
+                    <input type="tel" placeholder="Seu telefone"/>      <!--o placeholder é o comando usado para deixar uma mensagem nossa para o usuario dentro do campo da mensagem, informado a ele qual informação é reqsuitada-->
+                    <textarea placeholder="sua mensagem" required></textarea>  <!--o type é a tag que usamos para avisar o sistema o tipo de informação que ele ira receber/guardar-->   
+                    <button type="submit">Enviar</button>       <!-- o comando <textarea> é um tag que usamos para criar um campo de texto para o usuário colocar informações aleatorias como comentarios ou feedbacks-->
+                </form>                                         <!--tag button usamos para criar um botão e com o type dizemos que ele do tipo submit ou seja enviar-->
+            </div>
+            <div>
+                <h3>Nos acompanhe</h3>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" tittle="Siga-nos no instagram">
+                            <img src="./imagens projeto/instagram.png" alt="logo do instagram">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" tittle="Siga-nos no facebook">
+                            <img src="./imagens projeto/facebook.png" alt="logo do facebook">
+                            </a>
+                    </li>
+                </ul>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" tittle="Visite nosso canal no youtube">
+                            <img src="./imagens projeto/youtube.png" alt="logo do youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Venha ate nós</h3>
+                <p>
+                    Rua JavaScript n 124, villa HTML - São paulo - SP                
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Games shop - Todos os direitos reservados - 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

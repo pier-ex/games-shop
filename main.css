@@ -1,0 +1,163 @@
+* {
+    margin: 0;    /*1*/      /* comando usado para criar um "reset", utilizamos esse comando */
+    padding: 0;         /* quando removemos as regras padrões do navegador e aplicamos as nossas proprias regras */
+    box-sizing: border-box ;
+    
+}
+
+header,         /*2*/
+section h2      /* aqui dizemos que queremos usar a fonte bungee no header, e no h2 */
+section h3      /* aqui dizemos que o conteúdo da nossa h2 e h3 que pertencer a nossa tag section */
+form button {   /* tenha a mesma fonte bungee */
+    font-family: 'Bungee', cursive;
+    font-weight: normal; /* 2.1*/ /* nesse caso o navegador aplicou um "bold" ao conteúdo da nossa h3, e usamos o font-weight: normal */
+}                       /* para corrigir isso. */
+
+
+body, input, textarea {         /*3*/      /* aqui dizemos que todo o conteudo da nossa tag body tenha a fonte roboto */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+header {        /*4*/
+    padding: 16px;              /* aqui dizemos que queremos uma espaçamento interno"padding" de 16pixels */
+    background-color: #182c61;  /* aqui dizemos que a cor de fundo "background-color" é esse id de azul */
+    color: aliceblue;           /* aqui dizemos que as escritas de dentro do header terão a cor branca */
+
+}
+                    /*5*/
+header nav li {         /* dentro do nosso header nos temos um nav, dentro do nav temos um li */
+    display: inline;    /*   aqui dizemos que queremos que o conteudo do li esteja no display em linha,  */
+    margin-left: 16px; 
+    font-size: 18px;    /* margin-left quer dizer que queremos uma margem na esquerda desse conteudo de 16 pixels */
+}                       /* font-size queremos que o tamanho da escrita do conteudo de li seja de 18 pixels */
+                /*6*/
+header nav li a {       /* dentro do header temos um nav, dentro do nav um li, e dentro do li uma tag a */
+    color: rgb(255, 255, 255);   /*aqui dizemos queremos que o conteudo desse a esteja na cor branca */      
+    text-decoration: none;  /* aqui dizemos que queremos remover o underline presente no conteudo da tag a */
+}
+                    /*7*/
+.container {            /* o container no header servira para centralizar o centeúdo deixando nome da pagina na esquerda */
+    max-width: 1280px;  /* e o conteudo do menu "tag nav" na esquerda */
+    width: 100%;        /* aqui dizemos que o conteudo da nossa tag container tera uma largura max de 1280px */
+    margin: 0 auto;     /* width quer dizer que ele oculpará 100% da largura até chegar em 1280px */
+}                       /* passando dos de 1280px o centeúdo ficará centralizado */    
+                        /* o comando margin: 0 auto; foi usado para centralizar o conteúdo */
+                        /* no topo e na parte de baixo vai ser 0, e nas laterais será auto */
+                    /*8*/
+header .container,        /* aqui temos um header, dentro deles temos um container */
+section .container {    /* aqui queremos que a descrição da loja fica ao lado da imagem da mesma, com isso podemos usar essa mesma regra aqui, iniciando com a , pós o container na minha section o elemento . container deve seguir essa mesma regra aqui! */
+    display: flex;      /* aqui queremos que o conteudo da nossa tag container fique lado a lado com nossa tag <h1> */
+    align-items: center;    /* comando usado para centralizar na vertical */
+    justify-content: space-between; /* aqui dizemos que o contéudo va para a extrema direita */ 
+                                    /*ficando a <h1> na esquerda e conteúdo da nav na extrema direita */
+}
+                    /*9*/
+.brand-list img {  /* chamamos a brand-list que criamos dentro no html, img quer dizer que queremos que as imagens sigam esse padrão abaixo */
+    height: 24px;   /* tamanho max de 24px */
+    margin-left: 12px;  /* uma margem na na esquerda de 12px */
+    margin-top: 6;      /* e uma margem em cima de 6px */
+}                       /* margin-bottom signfica a imagem debaixo da escrita */
+                    /*10*/ 
+.brand-list li {        /* no brand-list temos os elementos de lista "li" */
+    display: inline;    /*e queremos que eles fiquem um do lado do outro, usando o display inline */
+}
+
+
+                    /*11*/
+section .container {    /* criamos essa regra para sobescrever em cima da regra 8, para que o contéudo da nossa section no elemento .container fique colada com o cabeçario e colado com a extrema superior esquerda da imagem da loja */
+    align-items: flex-start;
+}
+
+section {  /*12*/
+    padding: 24px 0;    /*aqui colocamos um espaçamento de 24px*/
+}
+
+section h2 { /* aqui colocamos uma margem na parte de baixo do h2 de 16px*/
+    margin-bottom: 16px;    /*13*/
+    
+}
+
+section {  /*14*/
+    color: #182c61;
+}
+
+section p {   /*15*/
+    margin-bottom: 8px;     /* aqui dizemos que o conteudo do nosso paragrafo tera uma margem baixa de 8px*/
+
+}
+
+
+.store-front { /*16*/
+    margin-right: 32px; /* aqui criamos uma classe unica para a nossa imagem de fachada, para que essa regra se aplique apenas nela */
+}
+
+.social-links img {  /* aqui nos criamos uma classe para as imagens, e dizemos que as imagens dentro da classe social links tenham uma altura/tamanho de 24px */
+    height: 24px;   /* com isso o navegador ja vai adptar a largurar para mantera proporção da imagem, sem precisar usar outra regra */
+}
+
+.social-links li {  /* aqui dizemos que o contéudo da nossa li, dentro da social link, tenha a distribuição em linha*/
+    display: inline;    /* e que tenha uma margem na direita de 8px*/
+    margin-right: 8px;
+}
+
+.social-links li a {   /* o conteudo que se encontra dentro da nossa tag a, dentro do li, dentro da classe social link, que se encontra entro da nossa ul*/
+    text-decoration: none;  /*estava com marcações estranhas na tela de usuario, usamos essa regra aqui e o comendo text-decoration */
+}       /* para remover essa marcação! */
+
+
+#contact .container {   /* aqui criamos um id especifico para a nossa seção de contato, e queremos dizer que o container dentro da nossa id contact tenha essa regra aplicada*/
+    display: block;     /* o display block faz com que o conteudo fique um baixo do outro em forma de lista */
+}
+
+.contacts-methods {
+    display: flex;
+    justify-content: space-between; /* tag usada para criar um espaçamento entre as sessões*/
+    margin-left: 2px;
+    
+}
+
+form input,  /* aqui dizemos que o input, textarea e buttom de dentro do form tenham o display em bloco ou seja como uma lista */
+form textarea,
+form button {
+    display: block;
+    width: 320px;   /* width significa largura */
+    margin-bottom: 8px;  /*margem baixa*/
+    padding: 8px;   /* espaçamento interno*/
+}
+
+form textarea{   /* O nosso text area na tela do usuario estava com a possiblidade do mesmo conseguir aumentar a area de texto*/
+    resize: none;      /* ocorrendo assim uma quebra de layout, com essa regra "resize: none" que criamos agora, dizemos que o textarea de dentro do form*/
+    height: 180px;  /* tenha um tamanho limitado de 180px */
+}
+
+
+section h3 {  /* aqui dizemos que o conteúdo da nossa h3, que está dentro da section tenha margem baixa de 16px*/
+    margin-bottom: 16px;
+}
+
+form button {     /* aqui falamos sobre o contéudo do nosso botao */
+    background-color: #182c61;      /* aqui dizemos que a cor do nosso botao vai ser azul */
+    color: #fcfcfc;        /* aqui dizemos que a escrita de dentro do nosso botão seja essa cor */
+    border: none;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #2c4faf;
+}
+
+input:focus, textarea:focus {
+    outline-color:  #182c61; 
+}
+
+
+footer {
+    background-color: #182c61;
+    color: #fff;
+    padding: 16px 0;
+
+}
